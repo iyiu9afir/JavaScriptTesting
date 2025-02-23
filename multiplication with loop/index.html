@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <input type="number" id="number1" placeholder="first digit"/>
-    <input type="number" id="number2" placeholder="second digit"/>
-    <button onclick="multiply()">Submit</button>
-    <p id="warning"></p>
-    <p id="success"></p>
-    <div id="results">
+    <div id="double_input">
+      <input  id="number1" />
+      <input  id="number2" />
+      <button onclick="Dmultiply()">Submit</button>
+      <p id="Dwarning"></p>
+      <p id="Dsuccess"></p>
     </div>
 
-    
+    <div id="singler_input">
+      <input  id="number3" />
+      <button onclick="Smultiply()">Submit</button>
+      <p id="Swarning"></p>
+      <p id="Ssuccess"></p>
+    </div>
+    <div id="results"></div>
 
     <script src="script.js"></script>
   </body>

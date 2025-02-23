@@ -1,4 +1,4 @@
-function multiply() {
+function Dmultiply() {
   let getValue1 = Number(document.getElementById("number1").value);
   let getValue2 = Number(document.getElementById("number2").value);
   let showResult = document.getElementById("results");
@@ -15,8 +15,8 @@ function multiply() {
     getValue2 > 20
   ) {
     let text = "Not Valid!";
-    document.getElementById("warning").innerHTML = text;
-    document.getElementById("success").innerHTML = "";
+    msgReset();
+    document.getElementById("Dwarning").innerHTML = text;
   } else {
     text = "Proceed";
     for (let i = getValue1; i <= getValue2; i++) {
@@ -27,7 +27,36 @@ function multiply() {
       tableHTML += "</div>";
       showResult.innerHTML += tableHTML;
     }
-    document.getElementById("warning").innerHTML = "";
-    document.getElementById("success").innerHTML = text;
+    msgReset();
+    document.getElementById("Dsuccess").innerHTML = text;
   }
+}
+
+function Smultiply() {
+  let getValue = Number(document.getElementById("number3").value);
+  let showResult = document.getElementById("results");
+  showResult.innerHTML = "";
+  if (isNaN(getValue) || getValue < 1 || getValue > 20) {
+    let text = "Not Valid!";
+    msgReset();
+    document.getElementById("Swarning").innerHTML = text;
+  } else {
+    text = "Proceed";
+
+    let tableHTML = `<div class="table-part">`;
+    for (let i = 1; i <= 10; i++) {
+      tableHTML += `${getValue} x ${i} = ${getValue * i} <br/>`;
+    }
+    tableHTML += "</div>";
+    showResult.innerHTML += tableHTML;
+    msgReset();
+    document.getElementById("Ssuccess").innerHTML = text;
+  }
+}
+
+function msgReset() {
+  document.getElementById("Ssuccess").innerHTML = "";
+  document.getElementById("Swarning").innerHTML = "";
+  document.getElementById("Dwarning").innerHTML = "";
+  document.getElementById("Dsuccess").innerHTML = "";
 }

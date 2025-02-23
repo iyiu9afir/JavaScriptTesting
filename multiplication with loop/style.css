@@ -12,6 +12,17 @@ body {
   border: 1px solid #000000;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 10px;
+}
+#number3{
+  margin-top: 10px;
+  height: 30px;
+  width: 325px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
 }
 input {
   background-color: #F0DB4F;
@@ -27,13 +38,29 @@ button {
   font-weight: 600;
   background-color: #F0DB4F;
 }
-#warning {
+#Dwarning {
   color: red;
   font-size: 30px;
+  display: inline;
+  margin-left: 10px;
 }
-#success {
+#Dsuccess {
   color: #F0DB4F;
   font-size: 25px;
+  display: inline;
+  margin-left: 10px;
+}
+#Swarning {
+  color: red;
+  font-size: 30px;
+  display: inline;
+  margin-left: 10px;
+}
+#Ssuccess {
+  color: #F0DB4F;
+  font-size: 25px;
+  display: inline;
+  margin-left: 10px;
 }
 #results {
   display: grid;
