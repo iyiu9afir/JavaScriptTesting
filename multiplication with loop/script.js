@@ -29,6 +29,7 @@ function Dmultiply() {
     }
     msgReset();
     document.getElementById("Dsuccess").innerHTML = text;
+    document.getElementById("number3").value = "";
   }
 }
 
@@ -42,7 +43,6 @@ function Smultiply() {
     document.getElementById("Swarning").innerHTML = text;
   } else {
     text = "Proceed";
-
     let tableHTML = `<div class="table-part">`;
     for (let i = 1; i <= 10; i++) {
       tableHTML += `${getValue} x ${i} = ${getValue * i} <br/>`;
@@ -51,9 +51,10 @@ function Smultiply() {
     showResult.innerHTML += tableHTML;
     msgReset();
     document.getElementById("Ssuccess").innerHTML = text;
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
   }
 }
-
 function msgReset() {
   document.getElementById("Ssuccess").innerHTML = "";
   document.getElementById("Swarning").innerHTML = "";
