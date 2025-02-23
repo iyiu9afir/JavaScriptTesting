@@ -1,19 +1,4 @@
-// var x = math(5,6);
-// function math(x,y){
-//     return x*y;
-// }
-// document.getElementById("js").innerHTML = x;
 
-// function inputValidation(){
-//     var x = document.getElementById("number").value;
-//     let text;
-//     if (isNaN(x) || x<1 || x>20){
-//         text="not valid"
-//     } else{
-//         text = "valid"
-//     }
-//     document.getElementById("output").innerHTML=text
-// }
 
 function multiply() {
   var getValue1 = document.getElementById("number1").value;
@@ -41,7 +26,4 @@ function multiply() {
   document.getElementById("warning").innerHTML = text;
 }
 
-// var math = 9;
-// for(var i =1;i<=10;i++){
-//     document.write(`${math} X ${i} = ${math*i} <br/>`)
-// }
+
