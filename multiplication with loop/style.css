@@ -36,8 +36,9 @@ button {
   font-size: 25px;
 }
 #results {
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: repeat(5, auto) ;
   margin-top: 50px;
 }
 #results .table-part {
@@ -47,6 +48,7 @@ button {
   font-family: "Prompt", serif;
   font-weight: 500;
   color: aquamarine;
+  margin-bottom: 50px;
 }
 /* #result1 {
   padding: 20px 20px;
