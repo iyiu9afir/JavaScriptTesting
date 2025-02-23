@@ -22,12 +22,18 @@ button {
 #results {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
-#result1 {
+#results .table-part{
+  margin: 0 20px;
+  font-size: 25px;
+  text-align: start;
+}
+/* #result1 {
   padding: 20px 20px;
   text-align: start;
 }
 #result2 {
     padding: 20px 20px;
     text-align: start;
-}
+} */
