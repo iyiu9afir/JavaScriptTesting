@@ -55,9 +55,11 @@ function Smultiply() {
     document.getElementById("number2").value = "";
   }
 }
+
 function msgReset() {
   document.getElementById("Ssuccess").innerHTML = "";
   document.getElementById("Swarning").innerHTML = "";
   document.getElementById("Dwarning").innerHTML = "";
   document.getElementById("Dsuccess").innerHTML = "";
 }
+// end
